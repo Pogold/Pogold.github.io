@@ -71,10 +71,10 @@ function validate($name,$email,$message,$phone)
   return $return_array;
 }
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
-$phone = $_POST['phone'];
+$name = $_GET['name'];
+$email = $_GET['email'];
+$message = $_GET['message'];
+$phone = $_GET['phone'];
 
 $return_array = validate($name,$email,$message,$phone);
 
